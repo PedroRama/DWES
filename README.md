@@ -11,3 +11,5 @@ md (para un archivo Markdown), README.</p>
 <p>En GitHub, si un repositorio Git tiene un archivo README en su directorio raíz, es automáticamente convertido en HTML y presentado en la página principal.</p>
 
 <h2><p><b>PROYECTO EN EDICIÓN...</b></p></h2>
+
+![fondo (1) (1)](https://github.com/PedroRama/DWES/assets/145338943/96711df3-f97d-44fa-9f64-d5f4a9eb9789)
