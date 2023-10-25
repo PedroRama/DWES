@@ -33,8 +33,6 @@ class LW:
         self.thread = threading.Thread(target=self.fetch_json_data)
         self.thread.start()
 
-        self.root.destroy()
-
     def draw_progress_circle(self, progress):
         self.canvas.delete("progress")  #Linea para boorrar dibuos anteriores al "lanzamiento".
         angle = int(360 * (progress/100))
@@ -53,8 +51,7 @@ class LW:
         self.root.after(100, self.update_progress_circle)
 
     def fetch_json_data(self):
-        response = requests.get("https://api.github.com/repos/PedroRama/DWES/contents/catalog.json?ref=main") ##archios json
+        response = requests.get("https://api.github.com/repos/PedroRama/DWES/contents/catalog.json?ref=main") ##archivo json
         if response.status_code == 200:
             json_data = response.json()  ##Respuesta variable json
-            # launch_main_window(json_data)
         print(response.json())  ## printea el json
