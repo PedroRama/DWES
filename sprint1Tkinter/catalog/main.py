@@ -1,7 +1,8 @@
 from tkinter import Tk
 from window import MainWindow
+from LWindow import LW
 
 if __name__ == "__main__":
     root = Tk()
-    app = MainWindow(root)
+    app = LW(root)
     root.mainloop()
