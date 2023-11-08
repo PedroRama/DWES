@@ -20,7 +20,7 @@
 15-->[androidx.core:core:1.9.0] C:\Users\Alumno\.gradle\caches\transforms-3\28a7af075d5af218c19b63a2f54b1523\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
 16
 17    <application
-17-->C:\msys64\home\Alumno\DWES\sprint3android\app\src\main\AndroidManifest.xml:5:5-27:19
+17-->C:\msys64\home\Alumno\DWES\sprint3android\app\src\main\AndroidManifest.xml:5:5-28:19
 18        android:allowBackup="true"
 18-->C:\msys64\home\Alumno\DWES\sprint3android\app\src\main\AndroidManifest.xml:6:9-35
 19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -60,7 +60,7 @@
 37            </intent-filter>
 38        </activity>
 39        <activity
-39-->C:\msys64\home\Alumno\DWES\sprint3android\app\src\main\AndroidManifest.xml:24:9-26:38
+39-->C:\msys64\home\Alumno\DWES\sprint3android\app\src\main\AndroidManifest.xml:24:9-27:15
 40            android:name="com.example.mycatalog.DetailActivity"
 40-->C:\msys64\home\Alumno\DWES\sprint3android\app\src\main\AndroidManifest.xml:25:13-43
 41            android:exported="true" />
