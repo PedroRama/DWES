@@ -2,13 +2,14 @@ R_DEF: Internal format may change without notice
 local
 color black
 color white
+drawable coche
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 id NavegarAlDetalle
 id descripcionTextView
 id imagenImageView
 id meGustaButton
-id tituloTextView
+id titulo
 layout activity_main
 layout detail_activity
 mipmap ic_launcher

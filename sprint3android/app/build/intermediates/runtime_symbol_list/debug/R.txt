@@ -2908,6 +2908,7 @@ int drawable btn_radio_off_mtrl 0x7f07007e
 int drawable btn_radio_off_to_on_mtrl_animation 0x7f07007f
 int drawable btn_radio_on_mtrl 0x7f070080
 int drawable btn_radio_on_to_off_mtrl_animation 0x7f070081
+int drawable coche 0x7f0700df
 int drawable design_fab_background 0x7f070082
 int drawable design_ic_visibility 0x7f070083
 int drawable design_ic_visibility_off 0x7f070084
@@ -3463,7 +3464,7 @@ int id time 0x7f0801ca
 int id title 0x7f0801cb
 int id titleDividerNoCustom 0x7f0801cc
 int id title_template 0x7f0801cd
-int id tituloTextView 0x7f0801ce
+int id titulo 0x7f0801f2
 int id toggle 0x7f0801cf
 int id top 0x7f0801d0
 int id topPanel 0x7f0801d1

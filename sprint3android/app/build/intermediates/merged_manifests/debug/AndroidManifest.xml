@@ -36,6 +36,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.example.mycatalog.DetailActivity"
+            android:exported="true" />
 
         <provider
             android:name="androidx.startup.InitializationProvider"
