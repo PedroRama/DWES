@@ -14,8 +14,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 
 public class PecesViewHolder extends RecyclerView.ViewHolder { //esto es para q me muestre el viewholder
-    private final TextView textView;
-    private final ImageView imageView;
+    private TextView textView;
+    private ImageView imageView;
     private PecesData titulo;
 
     public PecesViewHolder(@NonNull View itemView) { //esto es para q me muestre el itemview
@@ -31,6 +31,11 @@ public class PecesViewHolder extends RecyclerView.ViewHolder { //esto es para q 
                 Toast.makeText(context, "Clicaste en el titulo: " + nombre, Toast.LENGTH_LONG).show();//esto es para q me muestre el toast
 
                 Intent intent = new Intent(context, Detail_Activity.class);//Aqui es donde se le pasa el contexto y la clase a la que se quiere ir
+
+                intent.putExtra("titulo", titulo.getName());
+                intent.putExtra("imagen", titulo.getImage_url());
+                intent.putExtra("description", titulo.getDescription());
+
                 context.startActivity(intent);
             }
         });
