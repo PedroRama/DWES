@@ -7,16 +7,14 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.bumptech.glide.Glide;
 
 public class PecesViewHolder extends RecyclerView.ViewHolder { //esto es para q me muestre el viewholder
     private TextView textView;
     private ImageView imageView;
-    private PecesData titulo;
+    private PecesData pez;
 
     public PecesViewHolder(@NonNull View itemView) { //esto es para q me muestre el itemview
             super(itemView);
@@ -26,11 +24,16 @@ public class PecesViewHolder extends RecyclerView.ViewHolder { //esto es para q 
             itemView.setOnClickListener(new View.OnClickListener() { //vamos a hacer un clicklistener con esto mostramos el itemview
                 @Override
                 public void onClick(View view) {
-                    String name = titulo.getName();
+                    String name = pez.getName();
                     Context context = view.getContext();
                     Toast.makeText(context, "Hiciste clic en el titulo: " + name, Toast.LENGTH_LONG).show();
 
                     Intent intent = new Intent(context, Detail_Activity.class);
+
+                    intent.putExtra("titulo", pez.getName());
+                    intent.putExtra("imagen", pez.getImage_url());
+                    intent.putExtra("description", pez.getDescription());
+
                     context.startActivity(intent);
                 }
             });
@@ -41,6 +44,6 @@ public class PecesViewHolder extends RecyclerView.ViewHolder { //esto es para q 
         Glide.with(itemView.getContext())
                 .load(data.getImage_url())
                 .into(this.imageView);//esto es para q me muestre la imagen
-        this.titulo = data;
+        this.pez = data;
     }
 }

@@ -21,10 +21,11 @@ public class PecesData {
     public String getName() {
         return name;
     }
-    public String getImage_url() {
 
+    public String getImage_url() {
         return image_url;
     }
+
     public String getDescription() {
         return description;
     }
