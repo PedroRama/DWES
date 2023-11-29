@@ -7,6 +7,7 @@
 
 
     <TextView
+        style="@style/Name_celda"
         android:id="@+id/txt_celda"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

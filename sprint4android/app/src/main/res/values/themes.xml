@@ -13,5 +13,18 @@
         <item name="android:windowExitTransition">@android:transition/slide_right</item>
     </style>
 
+
+    <style name="Name_celda" parent="TextAppearance.AppCompat">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+
+    <style name="Name_clase" parent="TextAppearance.AppCompat">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
     <style name="Theme.MyOtherCatalog" parent="Base.Theme.MyOtherCatalog" />
 </resources>
